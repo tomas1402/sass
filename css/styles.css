@@ -1,0 +1,445 @@
+@charset "UTF-8";
+/* CSS Document  */
+/* Project name: TP SASS */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Abril de 2016 */
+/* Author: Name Lastname */
+/* Author's eMail: username@server.com */
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0; }
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+figure {
+  margin: 0;
+  line-height: 0; }
+  figure img {
+    width: 100%; }
+
+input, textarea, button {
+  border: none;
+  font-family: inherit; }
+
+/********************************* */
+/*=========     GLOBAL   ========= */
+/********************************* */
+.wrapper {
+  width: 97%;
+  max-width: 1200px;
+  margin: auto; }
+
+.red-button {
+  display: block;
+  margin: 25px auto 0;
+  background-color: #d32f2f;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+  max-width: 85%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 0 8px #000;
+  -webkit-box-shadow: 0 0 8px #000; }
+  .red-button:hover {
+    background-color: #811b1b; }
+
+.subtitle {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 24px;
+  margin-top: 0; }
+  .subtitle + p {
+    color: #919191;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 15px; }
+
+.separator {
+  margin: auto;
+  height: 3px;
+  background-color: #333333;
+  width: 45px; }
+  .separator.left-align {
+    margin-left: 0;
+    margin-right: 0; }
+
+#we-do, #our-projects, #clients, .call-to-action, footer {
+  padding: 70px 0; }
+
+/********************************* */
+/*=========     HEADER   ========= */
+/********************************* */
+header {
+  padding: 15px; }
+
+.logo {
+  display: inline-block;
+  max-width: 125px; }
+
+#toggle {
+  display: none; }
+  #toggle:checked ~ nav {
+    width: 100vw; }
+
+.toggle-button {
+  float: right;
+  margin-top: 10px; }
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #333333;
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  transition: 500ms;
+  -ms-transition: 500ms;
+  -webkit-transition: 500ms; }
+  nav li {
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    position: relative; }
+    nav li label {
+      position: absolute;
+      right: 15px;
+      top: 15px; }
+  nav a {
+    display: block;
+    font-size: 15px;
+    padding: 15px; }
+
+/********************************* */
+/*=========     BANNER   ========= */
+/********************************* */
+.banner {
+  min-height: 550px;
+  background: url(../images/bg-banner.jpg) center center;
+  text-align: center;
+  padding-top: 150px;
+  color: #fff; }
+  .banner h1 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0; }
+  .banner p {
+    font-size: 15px;
+    margin: 10px 0; }
+
+/************************************** */
+/*=========     WHAT-WE-DO    ========= */
+/************************************** */
+.services article {
+  margin: 40px 5% 0;
+  position: relative; }
+
+.red-ball {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: #d32f2f;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.service-text {
+  padding-left: 70px; }
+  .service-text h2 {
+    margin-top: 0;
+    font-size: 19px; }
+  .service-text p {
+    font-size: 15px;
+    color: #333333; }
+
+/**************************************** */
+/*=========     OUR-PROJECTS    ========= */
+/**************************************** */
+#our-projects {
+  background-color: #f7f7f7; }
+
+.project-list figure {
+  margin: 40px 5% 0;
+  box-shadow: 0 0 10px #333;
+  -webkit-box-shadow: 0 0 10px #333;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  overflow: hidden;
+  position: relative; }
+  .project-list figure div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 600ms;
+    -ms-transition: 600ms;
+    -webkit-transition: 600ms; }
+    .project-list figure div:hover {
+      background-color: rgba(0, 0, 0, 0.5); }
+      .project-list figure div:hover span {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1); }
+    .project-list figure div span {
+      width: 40px;
+      height: 40px;
+      background-color: #d32f2f;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -20px;
+      transform: scale(0);
+      -ms-transform: scale(0);
+      -webkit-transform: scale(0);
+      transition: 600ms;
+      -ms-transition: 600ms;
+      -webkit-transition: 600ms; }
+
+/****************************************** */
+/*=========     CALL-TO-ACTION    ========= */
+/****************************************** */
+.call-to-action {
+  background: url(../images/bg-data-contact.jpg) center top/cover no-repeat; }
+  .call-to-action h3 {
+    margin: 0;
+    color: #fff;
+    padding: 0 30px;
+    font: 400 24px "Montserrat";
+    text-align: center; }
+    .call-to-action h3 span {
+      color: #d32f2f;
+      display: block;
+      text-shadow: 0 0 3px #000; }
+
+/*********************************** */
+/*=========     CLIENTS    ========= */
+/*********************************** */
+.testimonies article {
+  margin: 40px 5% 0; }
+  .testimonies article p {
+    padding: 25px;
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  .testimonies article b {
+    font-size: 15px;
+    color: #333; }
+    .testimonies article b i {
+      color: #d32f2f;
+      font-style: normal; }
+
+/**************************************** */
+/*=========     SOCIAL-LINKS    ========= */
+/**************************************** */
+.social-links {
+  text-align: center; }
+  .social-links li {
+    display: inline-block;
+    margin: 15px;
+    color: #fff; }
+    .social-links li span {
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto 5px;
+      vertical-align: top;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      transition: 500ms;
+      -ms-transition: 500ms;
+      -webkit-transition: 500ms; }
+    .social-links li i {
+      font-style: normal;
+      font-size: 14px; }
+    .social-links li:hover span {
+      background-color: #d32f2f;
+      box-shadow: 0 0 5px #fff;
+      -webkit-box-shadow: 0 0 5px #fff; }
+
+/*********************************** */
+/*=========     CONTACT    ========= */
+/*********************************** */
+#contact {
+  background-color: #f7f7f7;
+  margin-top: 70px; }
+  #contact form {
+    padding: 50px 30px; }
+    #contact form .subtitle {
+      text-align: left; }
+      #contact form .subtitle + p {
+        text-align: left;
+        padding: 0; }
+    #contact form input, #contact form textarea {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      margin-top: 20px;
+      background-color: transparent;
+      border-bottom: solid 2px #ddd;
+      color: #333;
+      transition: 300ms;
+      -ms-transition: 300ms;
+      -webkit-transition: 300ms; }
+      #contact form input:focus, #contact form textarea:focus {
+        border-bottom-color: #d32f2f;
+        color: #d32f2f; }
+    #contact form textarea {
+      height: 120px;
+      min-height: 120px;
+      resize: vertical;
+      overflow: hidden; }
+    #contact form .red-button {
+      font-size: 16px;
+      margin: 20px 0 0;
+      padding: 10px; }
+
+.map {
+  position: relative;
+  height: 300px; }
+  .map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none; }
+  .map div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 85%; }
+
+/********************************** */
+/*=========     FOOTER    ========= */
+/********************************** */
+footer {
+  border-top: solid 2px #f7f7f7;
+  text-align: center; }
+  footer p {
+    color: #333; }
+    footer p em {
+      color: #d32f2f;
+      font-style: normal; }
+  footer a {
+    font-size: 14px; }
+
+/*/ 5. MediaQueries (siempre van de ├║ltimo) */
+/***************************************** */
+/*=========     MEDIA-QUERIES    ========= */
+/***************************************** */
+@media (min-width: 560px) {
+  .project-list figure {
+    float: left;
+    width: 40%; }
+  .project-list:after {
+    content: "";
+    display: block;
+    clear: both; } }
+@media (min-width: 800px) {
+  .logo {
+    display: block;
+    margin: 0 auto; }
+
+  nav {
+    position: absolute;
+    top: 60px;
+    background-color: #E8E8E8;
+    border-bottom: 1px #D6D4D4 solid;
+    border-top: 1px #D6D4D4 solid;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center; }
+    nav li {
+      color: black;
+      border-bottom: none;
+      display: inline-block;
+      margin: 0 auto; }
+      nav li label {
+        position: absolute;
+        right: 15px;
+        top: 15px; }
+    nav a {
+      display: block;
+      font-size: 15px;
+      padding: 15px; }
+
+  #toggle {
+    display: none; }
+
+  .toggle-button {
+    display: none; }
+
+  .fa-close {
+    display: none; }
+
+  .services article {
+    float: left;
+    width: 40%; }
+  .services:after {
+    content: "";
+    display: block;
+    clear: both; } }
+@media (min-width: 1100px) {
+  .project-list figure {
+    width: 23%;
+    margin: 40px 1% 0; }
+
+  .testimonies {
+    margin: 0 auto; }
+    .testimonies article {
+      margin: 40px 1% 0;
+      float: left;
+      width: 31%; }
+    .testimonies:after {
+      content: "";
+      display: block;
+      clear: both; }
+
+  #contact .map {
+    float: left;
+    width: 50%;
+    min-height: 600px; }
+  #contact form {
+    float: left;
+    width: 50%; }
+  #contact:after {
+    content: "";
+    display: block;
+    clear: both; } }
+
+/*# sourceMappingURL=styles.css.map */

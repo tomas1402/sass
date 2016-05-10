@@ -1,0 +1,18 @@
+// Importamos los archivos de SASS que vamos a compilar
+
+// 1. Variables (siempre van de 1ero)
+@import _variables
+
+// 2. Mixins (siempre van de 2do)
+@import _mixins
+
+// 3. Reset (para poder eliminar los estilos default del browser)
+@import _reset
+
+// 4. Layout (los estilos de nuestra estructura principal)
+@import _layout
+
+/*/ 5. MediaQueries (siempre van de último)*/
+@import _media-queries
+
+// Si tuvieramos más archivos SASS los importaríamos en el orden que queremos se compilen en nuestro CSS

@@ -1,0 +1,86 @@
+/******************************************/
+/*=========     MEDIA-QUERIES    =========*/
+/******************************************/
+
+@media (min-width: 560px)
+	// versión SM
+	.project-list
+		figure
+			float: left
+			width: 40%
+
+		+clearfix
+
+@media (min-width: 800px)
+	// versión MD
+	.logo
+		display: block
+		margin: 0 auto
+
+	nav
+		position: absolute
+		top: 60px
+		background-color: #E8E8E8
+		border-bottom: 1px #D6D4D4 solid
+		border-top: 1px #D6D4D4 solid
+		width: 100%
+		height: 50px
+		margin: 0 auto
+		text-align: center
+		li
+			color: black
+			border-bottom: none
+			display: inline-block
+			margin: 0 auto
+			label
+				position: absolute
+				right: 15px
+				top: 15px
+		a
+			display: block
+			font-size: 15px
+			padding: 15px
+
+	#toggle
+		display: none
+
+	.toggle-button
+		display: none
+
+	.fa-close
+		display: none
+
+	.services
+		article
+			float: left
+			width: 40%
+
+		+clearfix
+
+@media (min-width: 1100px)
+	// versión LG
+	.project-list
+		figure
+			width: 23%
+			margin: 40px 1% 0
+
+	.testimonies
+		article
+			margin: 40px 1% 0
+			float: left
+			width: 31%
+
+		+clearfix
+		margin: 0 auto
+
+	#contact
+		.map
+			float: left
+			width: 50%
+			min-height: 600px
+
+		form
+			float: left
+			width: 50%
+
+		+clearfix

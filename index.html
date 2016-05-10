@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maquetación con SASS</title>
+	<!-- Font-Awesome-Library -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<!-- Our-Style-Sheet -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<!-- header -->
+	<header>
+		<figure class="logo">
+			<img src="images/logo.png" alt="logo">
+		</figure>
+		<!-- toggle-nav-button -->
+		<input type="checkbox" id="toggle">
+
+		<label for="toggle" class="toggle-button">
+			MENU
+			<span class="fa fa-bars" aria-hidden="true"></span>
+		</label>
+		<!-- nav-bar -->
+		<nav>
+			<ul>
+				<li>
+					<a href="#">HOME</a>
+					<label for="toggle" class="fa fa-close" aria-hidden="true"></label>
+				</li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">TEAM</a></li>
+				<li><a href="#">PRICING</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- banner -->
+	<section class="banner">
+		<article class="wrapper">
+			<h1>CREATIVE LANDING PAGE</h1>
+			<p>The most powerful HTML5 landing pages pack</p>
+			<a href="#" class="red-button">READ NOW</a>
+			<a href="#" class="red-button">PURCHASE NOW</a>
+		</article>
+	</section>
+
+	<!-- what-we-do -->
+	<section id="we-do">
+		<article class="wrapper">
+			<h2 class="subtitle">WHAT WE DO</h2>
+			<p>Release bandwidth user experience research & development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium.</p>
+			<div class="separator"></div>
+			<!-- services -->
+			<section class="services">
+			<!-- service 01 -->
+				<article>
+					<span class="red-ball">
+						<span class="fa fa-diamond"></span>
+					</span>
+					<div class="service-text">
+						<h2>Web design</h2>
+						<p>Direct mailing incubator long tail launch party creative value proposition learning curve angel investor lean startup traction metrics customer</p>
+					</div>
+				</article>
+
+				<!-- service 02 -->
+				<article>
+					<span class="red-ball">
+						<span class="fa fa-code"></span>
+					</span>
+					<div class="service-text">
+						<h2>Web Development</h2>
+						<p>Alpha pitch customer return on investment stock pivot ecosystem equity long tail prototype low hanging fruit paradigm shift startup.</p>
+					</div>
+				</article>
+
+				<!-- service 03 -->
+				<article>
+					<span class="red-ball">
+						<span class="fa fa-bar-chart"></span>
+					</span>
+					<div class="service-text">
+						<h2>Analysis</h2>
+						<p>Learning curve metrics social media accelerator incubator ecosystem churn rate virality value proposition deployment alpha innovator buyer.</p>
+					</div>
+				</article>
+
+				<!-- service 04 -->
+				<article>
+					<span class="red-ball">
+						<span class="fa fa-dollar"></span>
+					</span>
+					<div class="service-text">
+						<h2>Marketing</h2>
+						<p>Graphical user interface first mover advantage network effects learning curve agile development return on investment client funding.</p>
+					</div>
+				</article>
+			</section>
+		</article>
+	</section>
+
+
+	<!-- our-projects -->
+	<section id="our-projects">
+		<article class="wrapper">
+			<h2 class="subtitle">OUR PROJECTS</h2>
+			<p>Release bandwidth user experience research & development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium.</p>
+			<div class="separator"></div>
+			<!-- projects-list -->
+			<article class="project-list">
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_01.jpg" alt="portfolio 01">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_02.jpg" alt="portfolio 02">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_03.jpg" alt="portfolio 03">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_04.jpg" alt="portfolio 04">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_05.jpg" alt="portfolio 05">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_06.jpg" alt="portfolio 06">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_07.jpg" alt="portfolio 07">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_08.jpg" alt="portfolio 08">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_09.jpg" alt="portfolio 09">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_10.jpg" alt="portfolio 10">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_11.jpg" alt="portfolio 11">
+				</figure>
+				<figure>
+					<div><span class="fa fa-search"></span></div>
+					<img src="images/img-portfolio_12.jpg" alt="portfolio 12">
+				</figure>
+			</article>
+		</article>
+	</section>
+
+	<!-- call-to-action -->
+	<section class="call-to-action">
+		<article class="wrapper">
+			
+			<h3>NEED HELP? CALL OUR AWARD-WINNING SUPPORT TEAM 24/7 AT <span>+1 123 456-7890</span></h3>
+		</article>
+	</section>
+
+	<!-- what-clients-say  -->
+	<section id="clients">
+		<article class="wrapper">
+			<h2 class="subtitle">WHAT CLIENTS SAYS</h2>
+			<p>Release bandwidth user experience research & development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium.</p>
+			<div class="separator"></div>
+			<!-- testimonies -->
+			<article class="testimonies">
+				<article>
+					<p>Customer ecosystem client validation stock seed money iteration backing crowdsource research & development founders validation stock.</p>
+					<b>Blanche - <i>graphicfort</i></b>
+				</article>
+
+				<article>
+					<p>Seed money deployment customer client leverage sales ramen rockstar market influencer startup hypotheses funding business plan.</p>
+					<b>Arthur - <i>graphicfort</i></b>
+				</article>
+
+				<article>
+					<p>Graphical user interface twitter iPad scrum project partnership iteration startup launch party validation social media beta. Lorem ipsum dolor sit amet!</p>
+					<b>Abelle - <i>graphicfort</i></b>
+				</article>
+			</article>
+		</article>
+	</section>
+
+
+	<!-- call-to-action -->
+	<section class="call-to-action">
+		<article class="wrapper">
+			<ul class="social-links">
+				<li>
+					<a href="#">
+						<span class="fa fa-facebook"></span>
+						<i>Facebook</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-google-plus"></span>
+						<i>Google+</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-twitter"></span>
+						<i>Twitter</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-youtube"></span>
+						<i>Youtube</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-behance"></span>
+						<i>Behance</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-pinterest"></span>
+						<i>Pinterest</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-dribbble"></span>
+						<i>Dribbble</i>
+					</a>
+				</li>
+			</ul>
+		</article>
+	</section>
+
+	<!-- contact -->
+	<section id="contact">
+		<article class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5646113441044!2d-58.42787818502122!3d-34.58988168046311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb587792c3d1f%3A0xf1b87643906422db!2sMalabia+1720%2C+C1414DMJ+CABA%2C+Argentina!5e0!3m2!1ses-419!2sus!4v1461070907594"></iframe>
+			<div></div>
+		</article>
+
+		<form>
+			<h2 class="subtitle">GET IN TOUCH</h2>
+			<p>Morbi tempor elit leo, eget mattis massa porta ac.</p>
+			<div class="separator left-align"></div>
+			<input type="text" placeholder="Name">
+			<input type="email" placeholder="Email address">
+			<input type="text" placeholder="Subject">
+			<textarea placeholder="Message"></textarea>
+			<button type="submit" class="red-button">
+				SEND MESSAGE
+				<span class="fa fa-arrow-right"></span>
+			</button>
+		</form>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<article class="wrapper">
+			<p>© 2016 <em>Graphicfort</em>, all rights reserved.</p>
+			<a href="tel:11234567890">+1 123 456-7890</a>
+		</article>
+	</footer>
+</body>
+</html>
